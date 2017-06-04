@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour {
 
-    public float walkSpeed = 3;
-    private CharacterController player;
+    public float walkSpeed = 10;
+    private Rigidbody2D player;
     private AnimationController2D animate;
 	// Use this for initialization
 	void Start ()
     {
-        player = gameObject.GetComponent<CharacterController>();
+        player = gameObject.GetComponent<Rigidbody2D>();
         animate = gameObject.GetComponent<AnimationController2D>();
     }
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
         Vector2 velocity = player.velocity;
         if(Input.GetAxis("Horizontal") < 0)
@@ -46,10 +46,18 @@ public class CharacterMovement : MonoBehaviour {
         }
         velocity.x *= 0.85f;
         velocity.y *= 0.85f;
-        player.Move(velocity * Time.deltaTime);
+        player.velocity = velocity;
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-
-    } 
+        print("entered");
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        print("exit");
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        print("stay");
+    }
 }
