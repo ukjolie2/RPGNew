@@ -1,24 +1,24 @@
 fileFormatVersion: 2
 guid: eda2c69df08715841b36c5e51f73d8d5
-timeCreated: 1489534221
+timeCreated: 1499641943
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Solomon_0
-    21300002: Solomon_1
-    21300004: Solomon_2
-    21300006: Solomon_3
-    21300008: Solomon_4
-    21300010: Solomon_5
-    21300012: Solomon_6
-    21300014: Solomon_7
-    21300016: Solomon_8
-    21300018: Solomon_9
-    21300020: Solomon_10
-    21300022: Solomon_11
-    21300024: Solomon_12
-    21300026: Solomon_13
-    21300028: Solomon_14
+    21300002: Solomon_8
+    21300004: Solomon_1
+    21300006: Solomon_9
+    21300008: Solomon_2
+    21300010: Solomon_10
+    21300012: Solomon_3
+    21300014: Solomon_11
+    21300016: Solomon_4
+    21300018: Solomon_12
+    21300020: Solomon_5
+    21300022: Solomon_13
+    21300024: Solomon_6
+    21300026: Solomon_14
+    21300028: Solomon_7
     21300030: Solomon_15
   serializedVersion: 4
   mipmaps:
@@ -167,7 +167,7 @@ TextureImporter:
       name: Solomon_6
       rect:
         serializedVersion: 2
-        x: 97
+        x: 98
         y: 170
         width: 29
         height: 48
